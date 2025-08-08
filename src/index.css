@@ -1,0 +1,104 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --header-bg-light: #f5f5f5;
+  --header-bg-dark: #2d3748;
+  --text-light: #333333;
+  --text-dark: #f8f8f8;
+  --hover-bg-light: #e5e5e5;
+  --hover-bg-dark: #4a5568;
+  --transition-speed: 300ms;
+  --bg-card: #e9eff6;
+  --success: #1aab5f;
+  --success-foreground: #fff0f0;
+  --warning: #f7921c;
+  --warning-foreground: #f8fbfd;
+  --profit: #1aab5f;
+  --loss: #e85a5a;
+  --muted: #f4f8fb;
+  --muted-foreground: #6e7784;
+
+  --accent-foreground: #0f172a;
+  --border: #e2e8f0;
+  --card: #ffffff;
+  --card-foreground: #090909;
+  --chart-1: #2462ea;
+  --chart-2: #d97704;
+  --chart-3: #eab307;
+  --chart-4: #7b39ed;
+  --chart-5: #dc31b2;
+  --loss: #ee4444;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --primary: #2462ea;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+}
+/* 
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */

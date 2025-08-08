@@ -1,0 +1,255 @@
+export const holdingsData = [
+  {
+    id: 1,
+    schemeName: "Axis Bluechip Fund",
+    type: "Equity",
+    investedAmount: 120000,
+    currentValue: 148500,
+    returnPercentage: 23.75,
+    sipActive: true,
+  },
+  {
+    id: 2,
+    schemeName: "SBI Gold Fund",
+    type: "Gold",
+    investedAmount: 50000,
+    currentValue: 57200,
+    returnPercentage: 14.4,
+    sipActive: false,
+  },
+  {
+    id: 3,
+    schemeName: "HDFC Short Term Debt",
+    type: "Debt",
+    investedAmount: 200000,
+    currentValue: 212000,
+    returnPercentage: 6.0,
+    sipActive: true,
+  },
+  {
+    id: 4,
+    schemeName: "ICICI Flexi Cap",
+    type: "Equity",
+    investedAmount: 100000,
+    currentValue: 137500,
+    returnPercentage: 37.5,
+    sipActive: true,
+  },
+  {
+    id: 5,
+    schemeName: "Parag Parikh Flexi Cap",
+    type: "Equity",
+    investedAmount: 150000,
+    currentValue: 185000,
+    returnPercentage: 23.33,
+    sipActive: true,
+  },
+  {
+    id: 6,
+    schemeName: "UTI Liquid Fund",
+    type: "Debt",
+    investedAmount: 80000,
+    currentValue: 82400,
+    returnPercentage: 3.0,
+    sipActive: false,
+  },
+];
+
+export const insights = {
+  topPerforming: {
+    name: "ICICI Flexi Cap",
+    return: 37.5,
+  },
+  poorPerforming: {
+    name: "UTI Liquid Fund",
+    return: 3.0,
+  },
+  rebalancingAlert:
+    "Consider rebalancing: Equity allocation is 60%, which is optimal for your moderate risk profile.",
+};
+
+// data/portfolioSnapshots.ts
+
+export const snapshots = {
+  "2025-08-01": {
+    user: {
+      userName: "Rohan Sharma",
+      panNumber: "ABCDE1234F",
+      riskProfile: "Moderate",
+      portFolioValue: 1265000,
+      totalInvested: 1040000,
+      overallReturn: 225000,
+      overallReturnPercentage: 21.6,
+      xirr: 12.2,
+    },
+    assetAllocation: [
+      {
+        name: "Equity",
+        percentage: 60,
+        value: 759000,
+        color: "var(--chart-1)",
+      },
+      { name: "Debt", percentage: 30, value: 379500, color: "var(--chart-2)" },
+      { name: "Gold", percentage: 10, value: 126500, color: "var(--chart-3)" },
+    ],
+    holdings: [
+      {
+        id: 1,
+        schemeName: "Axis Bluechip Fund",
+        type: "Equity",
+        investedAmount: 120000,
+        currentValue: 148500,
+        returnPercentage: 23.75,
+        sipActive: true,
+      },
+      {
+        id: 2,
+        schemeName: "SBI Gold Fund",
+        type: "Gold",
+        investedAmount: 50000,
+        currentValue: 57200,
+        returnPercentage: 14.4,
+        sipActive: false,
+      },
+      {
+        id: 3,
+        schemeName: "HDFC Short Term Debt",
+        type: "Debt",
+        investedAmount: 200000,
+        currentValue: 212000,
+        returnPercentage: 6.0,
+        sipActive: true,
+      },
+      {
+        id: 4,
+        schemeName: "ICICI Flexi Cap",
+        type: "Equity",
+        investedAmount: 100000,
+        currentValue: 137500,
+        returnPercentage: 37.5,
+        sipActive: true,
+      },
+      {
+        id: 5,
+        schemeName: "Parag Parikh Flexi Cap",
+        type: "Equity",
+        investedAmount: 150000,
+        currentValue: 185000,
+        returnPercentage: 23.33,
+        sipActive: true,
+      },
+      {
+        id: 6,
+        schemeName: "UTI Liquid Fund",
+        type: "Debt",
+        investedAmount: 80000,
+        currentValue: 82400,
+        returnPercentage: 3.0,
+        sipActive: false,
+      },
+    ],
+    insights: {
+      topPerforming: {
+        name: "ICICI Flexi Cap",
+        returnPercentage: 37.5,
+      },
+      poorPerforming: {
+        name: "UTI Liquid Fund",
+        returnPercentage: 3.0,
+      },
+      rebalancingAlert:
+        "Consider rebalancing: Equity allocation is 60%, which is optimal for your moderate risk profile.",
+    },
+  },
+
+  "2025-06-30": {
+    user: {
+      userName: "Rohan Sharma",
+      panNumber: "ABCDE1234F",
+      riskProfile: "Moderate",
+      portFolioValue: 1200000,
+      totalInvested: 1040000,
+      overallReturn: 160000,
+      overallReturnPercentage: 15.4,
+      xirr: 10.5,
+    },
+    assetAllocation: [
+      {
+        name: "Equity",
+        percentage: 55,
+        value: 660000,
+        color: "var(--chart-1)",
+      },
+      { name: "Debt", percentage: 35, value: 420000, color: "var(--chart-2)" },
+      { name: "Gold", percentage: 10, value: 120000, color: "var(--chart-3)" },
+    ],
+    holdings: [
+      {
+        id: 1,
+        schemeName: "Axis Bluechip Fund",
+        type: "Equity",
+        investedAmount: 120000,
+        currentValue: 135000,
+        returnPercentage: 12.5,
+        sipActive: true,
+      },
+      {
+        id: 2,
+        schemeName: "SBI Gold Fund",
+        type: "Gold",
+        investedAmount: 50000,
+        currentValue: 54000,
+        returnPercentage: 8.0,
+        sipActive: false,
+      },
+      {
+        id: 3,
+        schemeName: "HDFC Short Term Debt",
+        type: "Debt",
+        investedAmount: 200000,
+        currentValue: 210000,
+        returnPercentage: 5.0,
+        sipActive: true,
+      },
+      {
+        id: 4,
+        schemeName: "ICICI Flexi Cap",
+        type: "Equity",
+        investedAmount: 100000,
+        currentValue: 125000,
+        returnPercentage: 25.0,
+        sipActive: true,
+      },
+      {
+        id: 5,
+        schemeName: "Parag Parikh Flexi Cap",
+        type: "Equity",
+        investedAmount: 150000,
+        currentValue: 170000,
+        returnPercentage: 13.33,
+        sipActive: true,
+      },
+      {
+        id: 6,
+        schemeName: "UTI Liquid Fund",
+        type: "Debt",
+        investedAmount: 80000,
+        currentValue: 82000,
+        returnPercentage: 2.5,
+        sipActive: false,
+      },
+    ],
+    insights: {
+      topPerforming: {
+        name: "ICICI Flexi Cap",
+        returnPercentage: 25.0,
+      },
+      poorPerforming: {
+        name: "UTI Liquid Fund",
+        returnPercentage: 2.5,
+      },
+      rebalancingAlert:
+        "Consider rebalancing: Equity allocation is 55%, which is slightly below the optimal level for your moderate risk profile.",
+    },
+  },
+};
