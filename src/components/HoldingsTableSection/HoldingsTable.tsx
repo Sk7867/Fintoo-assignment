@@ -29,8 +29,8 @@ const HoldingsTable = ({ holdingsData }: HoldingsTableProps) => {
 						</thead>
 
 						<tbody className='[&_tr:last-child]:border-0'>
-							{holdingsData.map((holding) => (
-								<tr key={holding.id} className='border-b transition-colors hover:bg-[var(--muted)]/50 data-[state=selected]:bg-[var(--muted)]'>
+							{holdingsData.map((holding, index) => (
+								<tr key={holding.id} className={`border-b transition-colors hover:bg-[var(--muted)]/50 data-[state=selected]:bg-[var(--muted)] ${index % 2 === 0 ? 'bg-[var(--background)]' : 'bg-[var(--header-bg-dark)]/10 dark:bg-[var(--muted)]/10'}`}>
 									<td className='p-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium'>{holding.schemeName}</td>
 									<td className='p-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium'>
 										<Badge

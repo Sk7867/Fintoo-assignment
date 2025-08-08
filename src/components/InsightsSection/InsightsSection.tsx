@@ -30,7 +30,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
         <div className='flex flex-col space-y-1.5 p-6 pb-3'>
           <div className="flex items-center gap-2">
             <BsGraphDownArrow className="h-5 w-5 text-[var(--warning)]" />
-            <h4 className='text-2xl font-semibold leading-none tracking-tight'>Needs Attention</h4>
+            <h4 className='text-2xl font-semibold leading-none tracking-tight'>Poor Performing Fund</h4>
           </div>
         </div>
         <div className='p-6 pt-0'>
