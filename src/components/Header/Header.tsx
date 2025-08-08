@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FiMoon, FiSun } from 'react-icons/fi'
+import { useTheme } from '../../contexts/ThemeContext';
 
 interface IHeaderProps {
   selectedDate: string;
@@ -8,17 +9,8 @@ interface IHeaderProps {
 }
 
 const Header: React.FC<IHeaderProps> = ({ selectedDate, setSelectedDate, datesArray }) => {
-  const [darkMode, setDarkMode] = useState(false)
 
-  const toggleDarkMode = () => {
-    if (darkMode) {
-      document.documentElement.classList.remove('dark')
-      setDarkMode(false)
-    } else {
-      document.documentElement.classList.add('dark')
-      setDarkMode(true)
-    }
-  }
+  const { darkMode, toggleDarkMode } = useTheme()
 
   const handleDateChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDate(event.target.value)

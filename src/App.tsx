@@ -7,7 +7,8 @@ import AssetAllocation from './components/AssetAllocationSection/AssetAllocation
 import HoldingsTable from './components/HoldingsTableSection/HoldingsTable'
 import InsightsSection from './components/InsightsSection/InsightsSection'
 import { snapshots } from './data/portfolioData'
-import type { IAssetAllocation, IHoldings, IInsightsData, IUserData } from './components/models/user-data.interface'
+import type { IAssetAllocation, IHoldings, IInsightsData, IUserData } from './models/user-data.interface'
+import { ThemeProvider } from './contexts/ThemeContext'
 const availableDates = Object.keys(snapshots)
 
 function App() {
@@ -41,17 +42,19 @@ function App() {
 
 
   return (
-    <div className="App bg-[var(--header-bg-light)] text-[var(--text-light)] transition-colors duration-[var(--transition-speed)] ease-in-out dark:bg-[var(--header-bg-dark)] dark:text-[var(--text-dark)]">
-      <Header selectedDate={selectedDate} setSelectedDate={setSelectedDate} datesArray={availableDates} />
+    <ThemeProvider>
+      <div className="App bg-[var(--header-bg-light)] text-[var(--text-light)] transition-colors duration-[var(--transition-speed)] ease-in-out dark:bg-[var(--header-bg-dark)] dark:text-[var(--text-dark)]">
+        <Header selectedDate={selectedDate} setSelectedDate={setSelectedDate} datesArray={availableDates} />
 
-      <div className='container mx-auto px-4 py-6 space-y-6'>
-        <UserSummaryCard userData={userData} />
-        <AssetAllocation assetAllocation={assetAllocation} />
-        <HoldingsTable holdingsData={holdingsData} />
-        <InsightsSection insights={insightsData} />
+        <div className='container mx-auto px-4 py-6 space-y-6'>
+          <UserSummaryCard userData={userData} />
+          <AssetAllocation assetAllocation={assetAllocation} />
+          <HoldingsTable holdingsData={holdingsData} />
+          <InsightsSection insights={insightsData} />
+        </div>
+
       </div>
-
-    </div>
+    </ThemeProvider>
   )
 }
 

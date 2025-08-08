@@ -1,7 +1,8 @@
 import { BsGraphDownArrow, BsGraphUpArrow } from 'react-icons/bs'
 import { Badge } from '../Badge/Badge'
 import { FiAlertTriangle } from 'react-icons/fi'
-import type { IInsightsData } from '../models/user-data.interface'
+import type { IInsightsData } from '../../models/user-data.interface'
+import React from 'react'
 
 interface InsightsSectionProps {
   insights: IInsightsData
@@ -58,4 +59,4 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
   )
 }
 
-export default InsightsSection
+export default React.memo(InsightsSection)
