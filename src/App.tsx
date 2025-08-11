@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
 import UserSummaryCard from './components/UserSummaryCard/UserSummaryCard'
@@ -14,6 +14,11 @@ const availableDates = Object.keys(snapshots)
 function App() {
   const [selectedDate, setSelectedDate] = useState(availableDates[0])
   const { data } = usePortfolioData(selectedDate)
+
+  useEffect(() => {
+    document.title = `Portfolio Snapshot - ${selectedDate}`
+  }, [selectedDate])
+
 
   if (!data) {
     return <div className="container mx-auto px-4 py-6">No Portfolio Data Available</div>
